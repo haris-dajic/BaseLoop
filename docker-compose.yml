@@ -1,0 +1,38 @@
+﻿version: "3.8"
+
+services:
+  baseloop.connector:
+    image: baseloop.connector
+    build:
+      context: .
+      dockerfile: BaseLoop.Connector/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+      - "3001:443"
+    environment:
+      - Logging__seq.url=http://seq:5341
+    depends_on:
+      - db
+      - seq
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Plavi.12.
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    restart: unless-stopped
+    volumes:
+      - ./data/sqldata:/var/opt/mssql/data
+  
+  seq:
+    image: datalust/seq
+    restart: unless-stopped
+    ports:
+      - "5341:5341"
+      - "8050:80"
+    environment:
+      - ACCEPT_EULA=Y

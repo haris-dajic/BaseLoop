@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLoop.Connector", "BaseLoop.Connector\BaseLoop.Connector.csproj", "{8416C58C-7612-4C7D-901E-169448E4639B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{6AC732F0-743D-4C5A-9C5E-54B5B8EF62C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4B062836-69E1-4C40-93ED-C9A9A3E20E86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{CBD0244F-E0E1-4CA5-A194-FA48EFFF2DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLoop.Identity", "BaseLoop.Identity\BaseLoop.Identity.csproj", "{B193563B-EE64-4A68-9B15-C0D2905E483B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLoop.Core", "BaseLoop.Core\BaseLoop.Core.csproj", "{C105C820-5A15-436D-877C-967479725325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLoop.Product", "BaseLoop.Product\BaseLoop.Product.csproj", "{794719C4-EBD9-4472-AC5A-4571D8F458D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{947717FF-7144-466C-9818-29FE7D7813BA}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8416C58C-7612-4C7D-901E-169448E4639B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8416C58C-7612-4C7D-901E-169448E4639B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8416C58C-7612-4C7D-901E-169448E4639B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8416C58C-7612-4C7D-901E-169448E4639B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B193563B-EE64-4A68-9B15-C0D2905E483B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B193563B-EE64-4A68-9B15-C0D2905E483B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B193563B-EE64-4A68-9B15-C0D2905E483B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B193563B-EE64-4A68-9B15-C0D2905E483B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C105C820-5A15-436D-877C-967479725325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C105C820-5A15-436D-877C-967479725325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C105C820-5A15-436D-877C-967479725325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C105C820-5A15-436D-877C-967479725325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794719C4-EBD9-4472-AC5A-4571D8F458D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794719C4-EBD9-4472-AC5A-4571D8F458D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794719C4-EBD9-4472-AC5A-4571D8F458D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794719C4-EBD9-4472-AC5A-4571D8F458D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8416C58C-7612-4C7D-901E-169448E4639B} = {6AC732F0-743D-4C5A-9C5E-54B5B8EF62C4}
+		{B193563B-EE64-4A68-9B15-C0D2905E483B} = {4B062836-69E1-4C40-93ED-C9A9A3E20E86}
+		{C105C820-5A15-436D-877C-967479725325} = {CBD0244F-E0E1-4CA5-A194-FA48EFFF2DB1}
+		{794719C4-EBD9-4472-AC5A-4571D8F458D3} = {4B062836-69E1-4C40-93ED-C9A9A3E20E86}
+	EndGlobalSection
+EndGlobal
